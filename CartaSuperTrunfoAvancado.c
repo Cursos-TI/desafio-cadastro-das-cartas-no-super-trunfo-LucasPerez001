@@ -86,7 +86,56 @@ int main() {
             printf ("Especial : %3.f \n", PoderEspecial2);
 
 // Comparação para determinar a vencedora 
-        
+         printf("\n===== Resultado da Batalha =====\n");
+//Comparando População
+            if (Pop > pop2) {
+                    printf("Vencedor: %s (maior População: %d)\n", codigo, Pop);
+                } else if (pop2 > Pop) {
+                    printf("Vencedor: %s (maior População: %d)\n", codigo2, pop2);
+                } else {
+                    printf("Empate!\n");
+                }
 
+//Comparando a Área
+            if (Area > area2) {
+                    printf("Vencedor: %s (maior área: %.3f)\n", codigo, Area);
+                } else if (area2 > Area) {
+                    printf("Vencedor: %s (maior área: %.3f)\n", codigo2, area2);
+                } else {
+                    printf("Empate!\n");
+                }    
+// Comparando a Densidade populacional
+            if (DensidadePopulacional > DensidadePopulacional2) {
+                    printf("Vencedor: %s (Menor densidade populacional: %.3f)\n", codigo, DensidadePopulacional);
+                } else if (PibPerCapita2 > PibPerCapita) {
+                    printf("Vencedor: %s (Menor densidade populacional: %.3f)\n", codigo2, DensidadePopulacional2);
+                } else {
+                    printf("Empate!\n");
+                }
+
+//Comparando o Pib
+            if (Pib > pib2) {
+                    printf("Vencedor: %s (maior PIB: %.3f)\n", codigo, Pib);
+                } else if (PibPerCapita2 > PibPerCapita) {
+                    printf("Vencedor: %s (maior PIB: %.3f)\n", codigo2, pib2);
+                } else {
+                    printf("Empate!\n");
+                }
+//comparando Pib Per Capita
+                if (PibPerCapita > PibPerCapita2) {
+                    printf("Vencedor: %s (maior PIB per capita: %.3f)\n", codigo, PibPerCapita);
+                } else if (PibPerCapita2 > PibPerCapita) {
+                    printf("Vencedor: %s (maior PIB per capita: %.3f)\n", codigo2, PibPerCapita2);
+                } else {
+                    printf("Empate! Ambas as cartas têm o mesmo PIB per capita.\n");
+                }
+// Comparando o especial
+                if (PoderEspecial > PoderEspecial2) {
+                    printf("Vencedor: %s (Especial: %.3f)\n", codigo, PoderEspecial);
+                } else if (PibPerCapita2 > PibPerCapita) {
+                    printf("Vencedor: %s (Especial: %.3f)\n", codigo2, PoderEspecial2);
+                } else {
+                    printf("Empate!\n");
+                }
     return 0;
 }
